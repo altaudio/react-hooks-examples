@@ -1,13 +1,5 @@
 import React, { useState } from 'react';
-
-
-const Counter = ({ count, setCount, countName }) => (
-  <section>
-    <p>Count {countName}: {count}</p>
-    <button onClick={() => setCount(count + 1)}>Increment</button>
-    <button onClick={() => setCount(count - 1)}>Decrement</button>
-  </section>
-)
+import Counter from './common/Counter'
 
 export default () => {
   const [countOne, setCountOne] = useState(0);
